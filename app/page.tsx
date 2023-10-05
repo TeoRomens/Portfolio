@@ -1,19 +1,20 @@
 "use client"
 import React from "react";
 import {TypeAnimation} from "react-type-animation";
+import Image from "next/image";
+import background1 from "./public/images/background-1.png"
 
 export default function Home() {
   return (
-      <div className="flex min-h-screen items-center justify-center overflow-hidden flex-col bg-[#121212]">
-          <h1 className="text-white mb-4 text-6xl sm:text-5xl lg:text-8xl font-display">
+      <div className="flex flex-col min-h-screen items-center justify-center overflow-hidden bg-[#121212]">
+          <h1 className="text-white py-72 text-6xl lg:text-8xl font-display">
               <span className='text-transparent bg-clip-text bg-gradient-to-r from-cyan-700 to-cyan-400'>
                   Hello, I&apos;m <br/>
               </span>
               <TypeAnimation
                   sequence={[
-                      // Same substring at the start will only be typed out once, initially
                       'Matteo',
-                      1000, // wait 1s before replacing "Mice" with "Hamsters"
+                      1000,
                       'App Developer',
                       1000,
                       'Drone Pilot',
