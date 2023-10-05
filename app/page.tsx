@@ -1,6 +1,7 @@
 "use client"
 import React from "react";
 import {TypeAnimation} from "react-type-animation";
+import FlutterLogo from "./public/images/flutter.svg"
 import Particles from "./components/particles";
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
                   wrapper="span"
                   speed={50}
                   repeat={Infinity}
+                  className="whitespace-nowrap"
               />
           </h1>
           <section className="bg-cyan-950 flex items-center justify-center">
@@ -56,9 +58,13 @@ export default function Home() {
                           <h3 className="text-left text-2xl font-medium dark:text-white">Tech Stack:</h3>
                           <div className="flex flex-wrap gap-6">
                               <div className="flex flex-col items-center justify-center gap-1">
+                                  <img src={FlutterLogo} alt="Flutter" className="w-11 h-12 select-none"/>
+                                  <p className="text-center">Flutter</p>
+                              </div>
+                              <div className="flex flex-col items-center justify-center gap-1">
                                   <img src="https://sbetav.me/assets/html-52732337.svg" alt="HTML" className="w-11 h-12 select-none"/>
-                                      <p className="text-center">HTML</p>
-                                  </div>
+                                  <p className="text-center">HTML</p>
+                              </div>
                               <div className="flex flex-col items-center justify-center gap-1">
                                   <img src="https://sbetav.me/assets/css-8e01670c.svg" alt="CSS" className="w-11 h-12 select-none"/>
                                       <p className="text-center">CSS</p>
