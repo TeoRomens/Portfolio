@@ -6,32 +6,33 @@ import Particles from "./components/particles";
 
 export default function Home() {
   return (
-      <div className="flex flex-col w-screen items-center justify-center overflow-hidden bg-[#121212]">
-          <Particles
-              className="absolute inset-0"
-              quantity={100}
-          />
-          <h1 className="text-white py-72 text-6xl lg:text-8xl font-display">
+      <div className="flex flex-col w-screen items-center overflow-hidden bg-[#121212]">
+          <div className="h-screen max-h-[800px] justify-center">
+              <Particles
+                className="absolute inset-0"
+                quantity={100}/>
+              <h1 className="text-white py-72 text-5xl md:text-7xl lg:text-8xl font-display">
               <span className='text-transparent bg-clip-text bg-gradient-to-r from-cyan-700 to-cyan-400'>
                   Hello, I&apos;m <br/>
               </span>
-              <TypeAnimation
-                  sequence={[
-                      'Matteo',
-                      1000,
-                      'App Developer',
-                      1000,
-                      'Drone Pilot',
-                      1000,
-                      'Basketball Player',
-                      1000
-                  ]}
-                  wrapper="span"
-                  speed={50}
-                  repeat={Infinity}
-                  className="whitespace-nowrap"
-              />
-          </h1>
+                  <TypeAnimation
+                      sequence={[
+                          'Matteo',
+                          1000,
+                          'App Developer',
+                          1000,
+                          'Drone Pilot',
+                          1000,
+                          'Basketball Player',
+                          1000
+                      ]}
+                      wrapper="span"
+                      speed={50}
+                      repeat={Infinity}
+                      className="whitespace-nowrap"
+                  />
+              </h1>
+          </div>
           <section className="bg-cyan-950 flex items-center justify-center">
               <div className="flex flex-col gap-12 max-w-custom w-5/6 pt-20 pb-20">
                   <div className="flex flex-col gap-3">
